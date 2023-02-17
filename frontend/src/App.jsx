@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
+import Author from "./Pages/Author";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/search" element={<Search />} /> */}
+        <Route path="/author" element={<Author />} />
       </Routes>
     </BrowserRouter>
   );
