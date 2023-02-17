@@ -1,8 +1,10 @@
 import "../css/home.css";
 import React from "react";
+import Header, { header } from "../component/header";
 export const Home = () => {
   return (
     <div className="Homebig">
+      <Header />
       <div className="Homepage1">
         <div className="'HomePage1Left">
           <div className="HomePage1Up">

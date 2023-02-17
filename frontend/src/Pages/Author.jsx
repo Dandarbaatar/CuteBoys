@@ -1,7 +1,7 @@
 import Photo from "../assets/photo.jpeg";
 import "../css/author.css";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// s
 function Author() {
   const [data, setdata] = useState([]);
 
