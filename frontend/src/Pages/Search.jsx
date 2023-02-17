@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import { News } from "./forsearch/news";
+import { News } from "../component/news";
 import { useEffect, useState } from "react";
-import { Changepage } from "./forsearch/changepage";
+import { Changepage } from "../component/changepage";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
