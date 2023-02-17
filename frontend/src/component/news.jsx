@@ -4,7 +4,7 @@ export const News = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
         marginBottom: "2vh",
       }}
     >
@@ -16,14 +16,14 @@ export const News = () => {
       <div
         style={{
           display: "flex",
-          width: "25vw",
+          width: "35vw",
           flexDirection: "column",
           height: "50%",
           justifyContent: "space-evenly",
           paddingTop: "3vw",
         }}
       >
-        <div style={{ fontWeight: "700", fontSize: "1.2vw" }}>
+        <div style={{ fontWeight: "700", fontSize: "1.6vw" }}>
           Charge Two Devices at the Same Time With This Magnetic Wireless
           Charging Dock
         </div>
@@ -47,7 +47,7 @@ export const News = () => {
           style={{
             fontWeight: "400",
             color: "#515151",
-            fontSize: "0.75vw",
+            fontSize: "0.9vw",
           }}
         >
           Leverage agile frameworks to provide a robust synopsis for high level
