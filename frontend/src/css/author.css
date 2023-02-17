@@ -78,12 +78,16 @@
 }
 .suh_card {
   width: 50vw;
-  height: 25vh;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .description {
-  width: px;
   height: 58px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* Heading/H5 Bold */
 
   font-family: "Mulish";
@@ -150,6 +154,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .desk {
   width: 220px;
@@ -191,4 +196,54 @@
 .colsss {
   display: flex;
   flex-direction: column;
+}
+.suh_name_date {
+  display: flex;
+  flex-direction: row;
+  width: 8vw;
+  height: 6vh;
+  justify-content: space-between;
+  /* Captions/Captions Bold */
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  /* or 13px */
+
+  letter-spacing: 0.003em;
+
+  /* Light/Text Color/Body 2 */
+
+  color: #9a9ab0;
+}
+.suh_type {
+  position: absolute;
+  bottom: 1px;
+  background-color: white;
+  width: 94px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  /* Captions/Captions Bold */
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  letter-spacing: 0.008em;
+
+  /* Light/Text Color/Body 2 */
+
+  color: #9a9ab0;
+}
+.pos {
+  position: relative;
 }
