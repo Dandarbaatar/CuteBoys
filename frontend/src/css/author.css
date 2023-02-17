@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .suh_body {
-  width: 1440px;
+  width: 60vw;
   height: 2200px;
 
   display: flex;
@@ -24,13 +24,12 @@
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 120%;
-  width: 700px;
-  height: 20px;
+  font-size: 48px;
+  line-height: 80%;
+  width: 35vw;
   /* or 74px */
 
-  letter-spacing: 0.003em;
+  letter-spacing: 0.001em;
 
   /* Light/Text Color/Title */
 
@@ -53,13 +52,14 @@
 
 .suh_header {
   width: 1224px;
-  height: 419px;
+  height: 45vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .suh_font1 {
   width: 177px;
-  height: 37px;
+  height: 5vh;
 
   /* Heading/H4 Bold */
 
@@ -77,11 +77,11 @@
   color: #11142d;
 }
 .suh_card {
-  width: 608px;
-  height: 519px;
+  width: 50vw;
+  height: 25vh;
 }
 .description {
-  width: 560px;
+  width: px;
   height: 58px;
 
   /* Heading/H5 Bold */
@@ -100,23 +100,24 @@
   color: #333333;
 }
 .news-pic {
-  width: 608px;
-  height: 376px;
+  width: 25vw;
+  height: 35vh;
 }
 .suh_card_x {
-  height: 600px;
+  width: 60vw;
+  height: 55vh;
   gap: 10px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
 }
 .suh_header3 {
-  width: 1232px;
+  width: 60vw;
   height: 1263px;
 }
 .suh_header3_font {
   width: 250px;
-  height: 37px;
+  height: 7vh;
 
   /* Heading/H4 Bold */
 
@@ -161,7 +162,7 @@
 }
 .suh_card_wrap {
   gap: 10px;
-  height: 1150px;
+  height: 20vh;
   display: flex;
   flex-wrap: wrap;
 }

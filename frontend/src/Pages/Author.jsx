@@ -5,17 +5,17 @@ import axios from "axios";
 function Author() {
   const [data, setdata] = useState([]);
 
-  const fetchURL = async () => {
-    await axios
-      .get(
-        `https://newsapi.org/v2/everything?q=tesla&from=2023-01-15&sortBy=publishedAt&apiKey=0797636a0e394ec29e4e053def1e1981`
-      )
-      .then((response) => setdata(response.data.articles));
-  };
-  console.log(data);
-  useEffect(() => {
-    fetchURL();
-  });
+  // const fetchURL = async () => {
+  //   await axios
+  //     .get(
+  //       `https://newsapi.org/v2/everything?q=tesla&from=2023-01-15&sortBy=publishedAt&apiKey=0797636a0e394ec29e4e053def1e1981`
+  //     )
+  //     .then((response) => setdata(response.data.articles));
+  // };
+  // console.log(data);
+  // useEffect(() => {
+  //   fetchURL();
+  // });
 
   return (
     <div className="suh_container">
@@ -42,13 +42,6 @@ function Author() {
                 </div>
               );
             })}
-            {/* <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
-              <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-            </div>
             <div className="suh_card">
               <img className="news-pic" src={Photo} alt="" />
               <div className="description">
@@ -76,7 +69,14 @@ function Author() {
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
               </div>
-            </div> */}
+            </div>
+            <div className="suh_card">
+              <img className="news-pic" src={Photo} alt="" />
+              <div className="description">
+                Charge Two Devices at the Same Time With This Magnetic Wireless
+                Charging Dock
+              </div>
+            </div>
           </div>
         </div>
         {/* guravdah heseg latest posts */}
@@ -158,23 +158,6 @@ function Author() {
             </div>
           </div>
         </div>
-        {/* <div className="create_NEWS">
-          <div className="colsss">
-            write your image URL here
-            <input
-              onChange={(e) => setImage(e.target.value)}
-              className="suh_image"
-            />
-          </div>
-          <div className="colsss">
-            write your description here
-            <input
-              onChange={(e) => setTitle(e.target.value)}
-              className="paragraph"
-            ></input>
-            <button className="suh_sub">submit</button>
-          </div>
-        </div> */}
       </div>
     </div>
   );
