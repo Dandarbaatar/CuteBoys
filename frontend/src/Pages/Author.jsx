@@ -3,7 +3,7 @@ import "../css/author.css";
 import React, { useState, useEffect } from "react";
 // s
 function Author() {
-  const [data, setdata] = useState([]);
+  // const [data, setdata] = useState([]);
 
   // const fetchURL = async () => {
   //   await axios
