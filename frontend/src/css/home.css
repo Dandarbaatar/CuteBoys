@@ -1,0 +1,146 @@
+.Homepage1Text1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.Homepage1Text2 {
+  width: 608px;
+  height: 370px;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 120%;
+  letter-spacing: 0.003em;
+  color: #ffffff;
+}
+.Homepage1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #919191;
+}
+.Homepage1Text {
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+}
+.Homepage1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.HomePage1Right {
+  width: 504px;
+  height: 693px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+}
+.Homepage1Text1 {
+  display: flex;
+  flex-direction: row;
+}
+.Homepage1Text11 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.HomePage1RightText2CardImg {
+  width: 144px;
+  height: 104px;
+  background-color: #f2f2f2;
+}
+.HomePage1RightText2Card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.HomePage1RightText1 {
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  margin-left: 14px;
+}
+.HomePage1RightText2CardText {
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0.008em;
+  color: #ffffff;
+}
+.HomePage1RightText2CardTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.HomePage1RightText2CardText1 {
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  width: 288px;
+  height: 38px;
+}
+.HomePage1RightText2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.HomePage1CardImg {
+  width: 120px;
+  height: 80px;
+  margin-right: 140px;
+  background-color: white;
+}
+.HomePage1Card {
+  display: flex;
+  flex-direction: column;
+  width: 296px;
+  height: 185px;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  background: #919191;
+}
+.HomePage1Cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.HomePage1CardText {
+  width: 264px;
+  height: 57px;
+  left: 120px;
+  top: 830px;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+}
+.HomePage1Card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-left: 3px solid #109be9;
+}
