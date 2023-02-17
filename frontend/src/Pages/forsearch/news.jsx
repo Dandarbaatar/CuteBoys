@@ -4,7 +4,7 @@ export const News = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "space-evenly",
         marginBottom: "2vh",
       }}
     >

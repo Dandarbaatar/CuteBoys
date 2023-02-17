@@ -3,11 +3,39 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { News } from "./forsearch/news";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Changepage } from "./forsearch/changepage";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
+  const [news, setNews] = useState([]);
+  const [but, setBut] = useState([]);
+  let a = 0;
+  let b = 0;
+  let c = [];
+  let temp = [{ is: "asd" }, { is: "dsa" }, { is: "temp" }, { is: "pmet" }];
+  useEffect(() => {
+    setNews(temp);
+  }, []);
+  const Get = async () => {
+    console.log(news);
+    news.forEach((element) => {
+      a++;
+      console.log(a);
+      if (a >= 3) {
+        b++;
+        a = 0;
+        c.push(b);
+        setBut(c);
+      }
+    });
+  };
+  useEffect(() => {
+    Get();
+  }, [news]);
+  useEffect(() => {
+    console.log(but);
+  }, [but]);
   const Input = (e) => {
     setInputs(e.target.value);
   };
@@ -60,10 +88,9 @@ export const Search = () => {
       </Navbar>
       <Container>
         <div style={{ fontWeight: "700", fontSize: "2vw" }}>News</div>
-        <News />
-        <News />
-        <News />
-        <News />
+        {news?.map((el) => {
+          return <News />;
+        })}
         <div
           style={{
             display: "flex",
@@ -80,7 +107,9 @@ export const Search = () => {
           >
             <img src="Group422.svg" alt="" style={{ rotate: "180deg" }} />
           </Button>
-          <Changepage />
+          {but?.map((el) => {
+            return <Changepage />;
+          })}
           <Button style={{ backgroundColor: "transparent", border: "none" }}>
             <img src="Group422.svg" alt="" />
           </Button>
