@@ -1,6 +1,5 @@
-import "../App.css";
-import Header from "../component/header";
-
+import "./home.css";
+import React from "react";
 export const Home = () => {
   return (
     <div className="Homebig">
