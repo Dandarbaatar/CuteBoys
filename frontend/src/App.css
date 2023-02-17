@@ -65,3 +65,46 @@ body {
   font-family: "Mulish", sans-serif;
   border: none;
 }
+.footerAav {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+.footerGurav {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+.footerUg {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  height: 100px;
+  width: 249px;
+  word-wrap: break-word;
+}
+.footerBagana {
+  color: #515151;
+  line-height: 19px;
+}
+.footerSolo {
+  line-height: 40px;
+}
+.footerDedAav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerZuraas {
+  width: 1200px;
+  margin-top: 59px;
+  height: 1px;
+  background-color: #f2f2f2;
+}
