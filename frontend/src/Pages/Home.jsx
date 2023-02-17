@@ -4,7 +4,6 @@ import Header from "../component/header";
 export const Home = () => {
   return (
     <div className="Homebig">
-      <Header />
       <div className="Homepage1">
         <div className="HomePage1Content">
           <div className="'HomePage1Left">

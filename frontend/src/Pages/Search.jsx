@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import { News } from "./forsearch/news";
+import { News } from "../component/news";
 import { useEffect, useState } from "react";
-import { Changepage } from "./forsearch/changepage";
+import { Changepage } from "../component/changepage";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
@@ -12,7 +12,7 @@ export const Search = () => {
   const [but, setBut] = useState([]);
   let a = 0;
   let b = 0;
-  let c = [];
+  let c = [0];
   let temp = [{ is: "asd" }, { is: "dsa" }, { is: "temp" }, { is: "pmet" }];
   useEffect(() => {
     setNews(temp);
@@ -52,7 +52,7 @@ export const Search = () => {
       >
         <div
           style={{
-            width: "65%",
+            width: "80%",
             height: "100%",
             display: "flex",
             alignItems: "center",
