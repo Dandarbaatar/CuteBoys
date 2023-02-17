@@ -32,7 +32,7 @@ function Author() {
         <div className="suh_header2">
           <div className="suh_font1">Recent Post</div>
           <div className="suh_card_x">
-            {data?.map((el) => {
+            {/* {data?.map((el) => {
               return (
                 <div key={el.id}>
                   <div className="suh_card">
@@ -41,40 +41,75 @@ function Author() {
                   </div>
                 </div>
               );
-            })}
+            })} */}
             <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="news-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description">
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
+                <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div>
               </div>
             </div>
             <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="news-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description">
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
+                <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div>
               </div>
             </div>
             <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="news-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description">
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
+                <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div>
               </div>
             </div>
             <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="news-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description">
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
+                <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div>
               </div>
             </div>
             <div className="suh_card">
-              <img className="news-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="news-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description">
                 Charge Two Devices at the Same Time With This Magnetic Wireless
                 Charging Dock
+                <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div>
               </div>
             </div>
           </div>
@@ -85,74 +120,134 @@ function Author() {
           <div className="suh_header3_font"> Our Lateset Post</div>
           <div className="suh_card_wrap">
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
+                </div>
+                {/* <div className="suh_name_date">
+                  <div>Floyd Miles</div>
+                  <div>3 Days Ago</div>
+                </div> */}
+              </div>
+            </div>
+            <div className="suh_card2">
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
+              </div>
+              <div className="description1">
+                <div className="desk">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
-              <div className="description1">
-                <div className="desk">
-                  Charge Two Devices at the Same Time With This Magnetic
-                  Wireless Charging Dock
-                </div>
+              <div className="pos">
+                <img className="latest-pic" src={Photo} alt="" />
+                <div className="suh_type">border</div>
               </div>
-            </div>
-            <div className="suh_card2">
-              <img className="latest-pic" src={Photo} alt="" />
               <div className="description1">
                 <div className="desk">
                   Charge Two Devices at the Same Time With This Magnetic
                   Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
