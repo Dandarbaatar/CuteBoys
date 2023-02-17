@@ -1,13 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
+import Author from "./Pages/Author";
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/search" element={<Search />} /> */}
+        <Route path="/author" element={<Author />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;
