@@ -18,7 +18,6 @@ export const Search = () => {
     setNews(temp);
   }, []);
   const Get = async () => {
-    console.log(news);
     news.forEach((element) => {
       a++;
       console.log(a);
@@ -33,9 +32,7 @@ export const Search = () => {
   useEffect(() => {
     Get();
   }, [news]);
-  useEffect(() => {
-    console.log(but);
-  }, [but]);
+  useEffect(() => {}, [but]);
   const Input = (e) => {
     setInputs(e.target.value);
   };
@@ -61,7 +58,7 @@ export const Search = () => {
         >
           <input
             style={{
-              width: "85%",
+              width: "100%",
               height: "60%",
               borderRadius: "8px",
               border: "none",
@@ -75,6 +72,7 @@ export const Search = () => {
               backgroundColor: "#F36326",
               height: "60%",
               width: "5.5vh",
+              marginLeft: "5vw",
               borderRadius: "8px",
             }}
           >
@@ -86,7 +84,7 @@ export const Search = () => {
           </Button>
         </div>
       </Navbar>
-      <Container>
+      <div style={{ width: "80%", marginLeft: "10vw" }}>
         <div style={{ fontWeight: "700", fontSize: "2vw" }}>News</div>
         {news?.map((el) => {
           return <News />;
@@ -105,16 +103,29 @@ export const Search = () => {
               border: "none",
             }}
           >
-            <img src="Group422.svg" alt="" style={{ rotate: "180deg" }} />
+            <img
+              src="Group422.svg"
+              alt=""
+              style={{ rotate: "180deg", width: "2.5vw", height: "2.5vw" }}
+            />
           </Button>
           {but?.map((el) => {
             return <Changepage />;
           })}
-          <Button style={{ backgroundColor: "transparent", border: "none" }}>
-            <img src="Group422.svg" alt="" />
+          <Button
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+            }}
+          >
+            <img
+              src="Group422.svg"
+              style={{ width: "2.5vw", height: "2.5vw", marginLeft: "-0.5vw" }}
+              alt=""
+            />
           </Button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
