@@ -4,10 +4,11 @@
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .suh_body {
-  width: 60vw;
-  height: 2200px;
+  width: 80vw;
 
   display: flex;
   flex-direction: column;
@@ -78,12 +79,16 @@
 }
 .suh_card {
   width: 50vw;
-  height: 25vh;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .description {
-  width: px;
   height: 58px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* Heading/H5 Bold */
 
   font-family: "Mulish";
@@ -101,10 +106,10 @@
 }
 .news-pic {
   width: 25vw;
-  height: 35vh;
+  height: 40vh;
 }
 .suh_card_x {
-  width: 60vw;
+  width: 80vw;
   height: 55vh;
   gap: 10px;
   display: flex;
@@ -112,8 +117,8 @@
   overflow-x: scroll;
 }
 .suh_header3 {
-  width: 60vw;
-  height: 1263px;
+  width: 80vw;
+  height: 1400px;
 }
 .suh_header3_font {
   width: 250px;
@@ -137,22 +142,23 @@
 .suh_card2 {
   display: flex;
   flex-direction: column;
-  width: 296px;
-  height: 500px;
+  width: 400px;
+  height: 60vh;
 }
 .latest-pic {
-  width: 296px;
-  height: 312px;
+  width: 400px;
+  height: 410px;
 }
 .description1 {
-  width: 296px;
+  width: 400px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .desk {
-  width: 220px;
+  width: 300px;
   height: 130px;
   font-family: "Mulish";
   font-style: normal;
@@ -191,4 +197,54 @@
 .colsss {
   display: flex;
   flex-direction: column;
+}
+.suh_name_date {
+  display: flex;
+  flex-direction: row;
+  width: 8vw;
+  height: 6vh;
+  justify-content: space-between;
+  /* Captions/Captions Bold */
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  /* or 13px */
+
+  letter-spacing: 0.003em;
+
+  /* Light/Text Color/Body 2 */
+
+  color: #9a9ab0;
+}
+.suh_type {
+  position: absolute;
+  bottom: 1px;
+  background-color: white;
+  width: 94px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  /* Captions/Captions Bold */
+
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  /* or 13px */
+
+  letter-spacing: 0.008em;
+
+  /* Light/Text Color/Body 2 */
+
+  color: #9a9ab0;
+}
+.pos {
+  position: relative;
 }
