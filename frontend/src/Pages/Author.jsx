@@ -1,10 +1,11 @@
 import Photo from "../assets/photo.jpeg";
 import "../css/author.css";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import React, { useState, useEffect } from "react";
+// import axios from "axios";
+import React from "react";
 
 function Author() {
-  const [data, setdata] = useState([]);
+  // const [data, setdata] = useState([]);
 
   // const fetchURL = async () => {
   //   await axios
