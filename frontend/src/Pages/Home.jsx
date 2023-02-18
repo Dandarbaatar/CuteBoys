@@ -1,10 +1,14 @@
 import "../css/home.css";
 import React from "react";
 import Header from "../component/header";
+import Footer from "../component/footer";
 export const Home = () => {
   return (
     <div className="Homebig">
       <div className="Homepage1">
+        <div className="headerHome">
+          <Header headerClass="headerBgNone" />
+        </div>
         <div className="HomePage1Content">
           <div className="'HomePage1Left">
             <div className="HomePage1Up">
@@ -242,6 +246,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

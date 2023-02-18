@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
 import { News } from "../component/news";
 import { useEffect, useState } from "react";
 import { Changepage } from "../component/changepage";
+import Header from "../component/header";
+import Footer from "../component/footer";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
@@ -38,6 +39,7 @@ export const Search = () => {
   };
   return (
     <div>
+      <Header />
       <Navbar
         style={{
           backgroundColor: "#109BE9",
@@ -84,8 +86,17 @@ export const Search = () => {
           </Button>
         </div>
       </Navbar>
-      <div style={{ width: "80%", marginLeft: "10vw" }}>
-        <div style={{ fontWeight: "700", fontSize: "2vw" }}>News</div>
+      <div
+        style={{
+          width: "80%",
+          marginLeft: "10vw",
+          marginTop: "5%",
+          marginBottom: "5%",
+        }}
+      >
+        <div style={{ fontWeight: "700", fontSize: "2vw", marginBottom: "1%" }}>
+          News
+        </div>
         {news?.map((el) => {
           return <News />;
         })}
@@ -126,6 +137,7 @@ export const Search = () => {
           </Button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

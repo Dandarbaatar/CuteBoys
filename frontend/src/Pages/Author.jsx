@@ -3,6 +3,8 @@ import "../css/author.css";
 // import React, { useState, useEffect } from "react";
 // import axios from "axios";
 import React from "react";
+import Header from "../component/header";
+import Footer from "../component/footer";
 
 function Author() {
   // const [data, setdata] = useState([]);
@@ -21,6 +23,7 @@ function Author() {
 
   return (
     <div className="suh_container">
+      <Header />
       <div className="suh_body">
         {/* ehnii heseg */}
         <div className="suh_header">
@@ -256,6 +259,7 @@ function Author() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
