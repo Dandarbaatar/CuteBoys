@@ -268,8 +268,8 @@ function Author() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
