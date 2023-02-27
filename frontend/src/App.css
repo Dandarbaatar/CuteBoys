@@ -127,8 +127,8 @@ body {
 }
 .footerAav {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
+  width: 80vw;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -137,8 +137,9 @@ body {
 }
 .footerGurav {
   display: flex;
-  justify-content: space-around;
-  width: 1000px;
+  justify-content: space-between;
+  width: 40vw;
+  height: 20vh;
 }
 .footerUg {
   font-size: 16px;
@@ -146,9 +147,9 @@ body {
   line-height: 20px;
   letter-spacing: 0.005em;
   text-align: left;
-  height: 100px;
-  width: 249px;
-  word-wrap: break-word;
+  height: 10vh;
+  width: 14vw;
+  /* word-wrap: break-word; */
 }
 .footerBagana {
   color: #515151;
@@ -161,10 +162,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80vw;
 }
-.footerZuraas {
+/* .footerZuraas {
   width: 1200px;
   margin-top: 59px;
   height: 1px;
   background-color: #f2f2f2;
+} */
+.footerIpSum {
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }

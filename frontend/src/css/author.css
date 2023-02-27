@@ -1,18 +1,15 @@
 .suh_container {
   margin: 0;
   width: 100%;
-
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 .suh_body {
   width: 80vw;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .suh_prof {
   display: flex;
@@ -82,13 +79,10 @@
   height: 45vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .description {
-  height: 58px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100px;
+
   /* Heading/H5 Bold */
 
   font-family: "Mulish";
@@ -104,6 +98,13 @@
 
   color: #333333;
 }
+.desk1 {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .news-pic {
   width: 25vw;
   height: 40vh;
@@ -117,8 +118,10 @@
   overflow-x: scroll;
 }
 .suh_header3 {
+  display: flex;
+  flex-direction: column;
   width: 80vw;
-  height: 1400px;
+  height: 130vh;
 }
 .suh_header3_font {
   width: 250px;
@@ -142,34 +145,37 @@
 .suh_card2 {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 18vw;
   height: 60vh;
 }
 .latest-pic {
-  width: 400px;
-  height: 410px;
+  width: 100%;
+  height: 38vh;
 }
 .description1 {
-  width: 400px;
-  height: 200px;
+  width: 20vw;
+  height: 22vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .desk {
-  width: 300px;
-  height: 130px;
+  width: 18vw;
+  height: 30vh;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 120%;
-}
-.suh_card_wrap {
-  gap: 10px;
-  height: 20vh;
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.suh_card_wrap {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .suh_create {
@@ -201,7 +207,7 @@
 .suh_name_date {
   display: flex;
   flex-direction: row;
-  width: 8vw;
+  width: 12vw;
   height: 6vh;
   justify-content: space-between;
   /* Captions/Captions Bold */
@@ -221,7 +227,7 @@
 }
 .suh_type {
   position: absolute;
-  bottom: 1px;
+  bottom: 0.1px;
   background-color: white;
   width: 94px;
   height: 40px;

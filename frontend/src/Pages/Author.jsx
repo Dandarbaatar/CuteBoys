@@ -53,11 +53,13 @@ function Author() {
                 <div className="suh_type">border</div>
               </div>
               <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-                <div className="suh_name_date">
-                  <div>Floyd Miles</div>
-                  <div>3 Days Ago</div>
+                <div className="desk1">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,11 +69,13 @@ function Author() {
                 <div className="suh_type">border</div>
               </div>
               <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-                <div className="suh_name_date">
-                  <div>Floyd Miles</div>
-                  <div>3 Days Ago</div>
+                <div className="desk1">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -81,11 +85,13 @@ function Author() {
                 <div className="suh_type">border</div>
               </div>
               <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-                <div className="suh_name_date">
-                  <div>Floyd Miles</div>
-                  <div>3 Days Ago</div>
+                <div className="desk1">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,11 +101,13 @@ function Author() {
                 <div className="suh_type">border</div>
               </div>
               <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-                <div className="suh_name_date">
-                  <div>Floyd Miles</div>
-                  <div>3 Days Ago</div>
+                <div className="desk1">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,11 +117,13 @@ function Author() {
                 <div className="suh_type">border</div>
               </div>
               <div className="description">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-                <div className="suh_name_date">
-                  <div>Floyd Miles</div>
-                  <div>3 Days Ago</div>
+                <div className="desk1">
+                  Charge Two Devices at the Same Time With This Magnetic
+                  Wireless Charging Dock
+                  <div className="suh_name_date">
+                    <div>Floyd Miles</div>
+                    <div>3 Days Ago</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,8 +268,8 @@ function Author() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
