@@ -99,7 +99,7 @@
   color: #333333;
 }
 .desk1 {
-  height: 160px;
+  height: 18vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

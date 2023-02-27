@@ -164,12 +164,12 @@ body {
   align-items: center;
   width: 80vw;
 }
-/* .footerZuraas {
+.footerZuraas {
   width: 1200px;
   margin-top: 59px;
   height: 1px;
   background-color: #f2f2f2;
-} */
+}
 .footerIpSum {
   height: 14vh;
   display: flex;
