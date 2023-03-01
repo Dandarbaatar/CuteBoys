@@ -254,3 +254,24 @@
 .pos {
   position: relative;
 }
+.suh_include {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between;
+}
+/* pagination css */
+
+.suh_but {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  justify-content: center;
+  margin-right: 0.5vw;
+  font-size: 0.7vw;
+  color: white;
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: #109be9;
+}

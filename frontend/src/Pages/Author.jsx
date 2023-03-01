@@ -5,6 +5,8 @@ import "../css/author.css";
 import React from "react";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import "bootstrap/dist/css/bootstrap.css";
+import Button from "react-bootstrap/Button";
 
 function Author() {
   // const [data, setdata] = useState([]);
@@ -35,7 +37,48 @@ function Author() {
         </div>
         {/* hoyrdoh heseg recent post */}
         <div className="suh_header2">
-          <div className="suh_font1">Recent Post</div>
+          <div className="suh_include">
+            <div className="suh_font1">Recent Post</div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <Button
+                style={{
+                  backgroundColor: "transparent",
+                  color: "#E0E0E0",
+                  border: "none",
+                }}
+              >
+                <img
+                  src="Group422.svg"
+                  alt=""
+                  style={{ rotate: "180deg", width: "2.5vw", height: "2.5vw" }}
+                />
+              </Button>
+              <Button className="suh_but">1</Button>
+              <Button
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                }}
+              >
+                <img
+                  src="Group422.svg"
+                  style={{
+                    width: "2.5vw",
+                    height: "2.5vw",
+                    marginLeft: "-0.5vw",
+                  }}
+                  alt=""
+                />
+              </Button>
+            </div>
+          </div>
+
           <div className="suh_card_x">
             {/* {data?.map((el) => {
               return (
@@ -267,9 +310,47 @@ function Author() {
               </div>
             </div>
           </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                color: "#E0E0E0",
+                border: "none",
+              }}
+            >
+              <img
+                src="Group422.svg"
+                alt=""
+                style={{ rotate: "180deg", width: "2.5vw", height: "2.5vw" }}
+              />
+            </Button>
+            <Button className="suh_but">1</Button>
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+              }}
+            >
+              <img
+                src="Group422.svg"
+                style={{
+                  width: "2.5vw",
+                  height: "2.5vw",
+                  marginLeft: "-0.5vw",
+                }}
+                alt=""
+              />
+            </Button>
+          </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
