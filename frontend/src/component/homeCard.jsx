@@ -1,6 +1,10 @@
 import React from "react";
 import "../css/home.css";
+<<<<<<< HEAD
 export const HomeCard = () => {
+=======
+export const HomeCard1 = () => {
+>>>>>>> 753d6d5 (Home card zasav)
   return (
     <div className="HomePage2Card">
       <div className="HomePage2CardImg"></div>
@@ -15,3 +19,14 @@ export const HomeCard = () => {
     </div>
   );
 };
+<<<<<<< HEAD
+=======
+export const Homecard2 = () => {
+  return (
+    <div className="HomePage3Card">
+      <img className="HomePage3CardImg" />
+      <div className="HomePage3CardImg"></div>
+    </div>
+  );
+};
+>>>>>>> 753d6d5 (Home card zasav)

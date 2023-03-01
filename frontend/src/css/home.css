@@ -171,12 +171,14 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6vh;
 }
 .HomePage2ContentTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 46vw;
 }
 .homePageBtn {
   width: 112px;
@@ -202,8 +204,9 @@
 }
 .HomePage2Card {
   display: flex;
-  width: 296px;
+  width: 295px;
   height: 520px;
+  align-items: center;
   flex-direction: column;
   gap: 2vh;
 }
@@ -213,6 +216,8 @@
   background-color: #919191;
 }
 .HomePage2CardText {
+  width: 270px;
+  text-align: left;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
@@ -235,9 +240,14 @@
 .HomePage2CardDate {
   display: flex;
   flex-direction: row;
+  width: 270px;
   gap: 1vw;
 }
 .HomePage2Card:hover {
-  border: 2px solid #9a9ab0;
-  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.HomePage3 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }

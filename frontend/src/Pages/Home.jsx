@@ -2,7 +2,11 @@ import "../css/home.css";
 import React from "react";
 import Header from "../component/header";
 import Footer from "../component/footer";
+<<<<<<< HEAD
 import { HomeCard } from "../component/homeCard";
+=======
+import { HomeCard1, Homecard2 } from "../component/homeCard";
+>>>>>>> 753d6d5 (Home card zasav)
 export const Home = () => {
   const homeCard = [1, 2, 3, 4];
   return (
@@ -134,13 +138,32 @@ export const Home = () => {
           </div>
           <div className="HomePage2Cards1">
             {homeCard.map((e) => {
+<<<<<<< HEAD
               return <HomeCard />;
+=======
+              return <HomeCard1 />;
+>>>>>>> 753d6d5 (Home card zasav)
             })}
           </div>
           <div className="HomePage2Cards1">
             {homeCard.map((e) => {
+<<<<<<< HEAD
               return <HomeCard />;
             })}
+=======
+              return <HomeCard1 />;
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="HomePage3">
+        <div className="HomePage3Contents">
+          <div className="HomePage3Top">
+            <div>Recommended For You</div>
+          </div>
+          <div className="HomePage3Text">
+            <Homecard2 />
+>>>>>>> 753d6d5 (Home card zasav)
           </div>
         </div>
       </div>
