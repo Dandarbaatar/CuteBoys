@@ -2,7 +2,9 @@ import "../css/home.css";
 import React from "react";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import { HomeCard } from "../component/homeCard";
 export const Home = () => {
+  const homeCard = [1, 2, 3, 4];
   return (
     <div className="Homebig">
       <div className="Homepage1">
@@ -131,118 +133,14 @@ export const Home = () => {
             <button className="homePageBtn">View all</button>
           </div>
           <div className="HomePage2Cards1">
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
+            {homeCard.map((e) => {
+              return <HomeCard />;
+            })}
           </div>
           <div className="HomePage2Cards1">
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
-            <div className="HomePage2Card">
-              <div className="HomePage2CardImg"></div>
-              <div className="HomePage2CardText">
-                Charge Two Devices at the Same Time With This Magnetic Wireless
-                Charging Dock
-              </div>
-              <div className="HomePage2CardDate">
-                <div className="HomePage2CardDateDate">Orgil.B</div>
-                <div className="HomePage2CardDateDate">3 Days Ago</div>
-              </div>
-            </div>
+            {homeCard.map((e) => {
+              return <HomeCard />;
+            })}
           </div>
         </div>
       </div>
