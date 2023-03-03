@@ -229,7 +229,7 @@
 }
 .suh_type {
   position: absolute;
-  bottom: 0.1px;
+  bottom: -0.8px;
   background-color: white;
   width: 94px;
   height: 40px;
