@@ -147,10 +147,12 @@ export const Home = () => {
       <div className="HomePage3">
         <div className="HomePage3Contents">
           <div className="HomePage3Top">
-            <div>Recommended For You</div>
+            <div className="HomePage3TopLeft">Recommended For You</div>
           </div>
           <div className="HomePage3Text">
-            <Homecard2 />
+            {homeCard.map((e) => {
+              return <Homecard2 />;
+            })}
           </div>
         </div>
       </div>
