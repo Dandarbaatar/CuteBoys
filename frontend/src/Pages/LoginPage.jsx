@@ -65,8 +65,8 @@ function LoginPage() {
             src={pic}
             alt=""
             style={{
-              width: "44vw",
-              height: "64vh",
+              width: "72vw",
+              height: "111vh",
             }}
           />
         </div>
