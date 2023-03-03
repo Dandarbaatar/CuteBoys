@@ -4,6 +4,7 @@ import { Home } from "./Pages/Home";
 import Footer from "./component/footer";
 import Author from "./Pages/Author";
 import { Search } from "./Pages/Search";
+import { News } from "./Pages/NewsDetail";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/search" element={<Search />} />
         <Route path="/author" element={<Author />} />
+        <Route path="/news-detail" element={<News />} />
       </Routes>
     </BrowserRouter>
   );
