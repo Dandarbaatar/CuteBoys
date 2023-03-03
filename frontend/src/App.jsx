@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import Footer from "./component/footer";
 import Author from "./Pages/Author";
+import Login from "./Pages/LoginPage";
 import { Search } from "./Pages/Search";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
         <Route path="/search" element={<Search />} />
         <Route path="/author" element={<Author />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

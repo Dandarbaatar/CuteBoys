@@ -1,0 +1,125 @@
+.login_container {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_body {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+.login_first {
+  width: 22vw;
+  height: 58vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 0.5px solid #878787;
+  box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.login_welcome {
+  width: 18vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.login_signin {
+  width: 18vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 46px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.login_input {
+  width: 18vw;
+  height: 4vh;
+}
+.login_password {
+  width: 18vw;
+  height: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login_login {
+  width: 18vw;
+  height: 57px;
+
+  background: #000000;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.login_usrpas {
+  height: 24vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.login_jus {
+  display: flex;
+  flex-direction: row;
+  width: 18vw;
+  justify-content: space-between;
+}
+.login-but {
+  border: none;
+  background: none;
+}
+.login-but1 {
+  border: none;
+  background: none;
+  color: #7d7d7d;
+}
+.log_last {
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+}
+.login_h {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.log_last {
+  color: #7d7d7d;
+}
+.login_password1 {
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login_username {
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login_second {
+  width: 50vw;
+  height: 54vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
