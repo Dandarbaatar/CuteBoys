@@ -328,4 +328,5 @@
   display: flex;
   flex-direction: row;
   gap: 1vw;
+  overflow-x: scroll;
 }

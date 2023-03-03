@@ -1,0 +1,133 @@
+.signUp {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.signUpContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  width: 505px;
+  height: 757px;
+  left: 106px;
+  top: 85px;
+  background: #ffffff;
+  border: 0.5px solid #878787;
+  box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.signUpSize {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6vw;
+}
+.signUpImg {
+  width: 827px;
+  height: 650px;
+  background-image: url(../assets/signUp.svg);
+}
+
+.signUpContent1 {
+  width: 132px;
+  height: 38px;
+  left: 146px;
+  top: 103px;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 38px;
+  color: #000000;
+}
+.signUpContent2 {
+  width: 157px;
+  height: 47px;
+  left: 146px;
+  top: 151px;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 46px;
+  color: #000000;
+}
+.signUpContent3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.signUpContent3Text {
+  left: 0%;
+  right: 7.8%;
+  top: 0%;
+  bottom: 73.91%;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.signUpContent3Inp {
+  width: 423px;
+  height: 59px;
+  left: 6.38%;
+  right: 67.14%;
+  top: 32.2%;
+  bottom: 32.2%;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ababab;
+  border-radius: 8px;
+  border: 1px solid #ababab;
+}
+.signUpContentContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  justify-content: center;
+}
+.signUpContentBtn {
+  width: 423px;
+  height: 57px;
+  left: 146px;
+  top: 720px;
+  color: white;
+  background: #000000;
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+.signUpContentContentText1 {
+  left: 215px;
+  top: 797px;
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7d7d7d;
+}
+
+.signUpContentContentText2 {
+  font-family: "arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.signUpContent4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
