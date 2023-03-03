@@ -6,6 +6,7 @@ import Author from "./Pages/Author";
 import Login from "./Pages/LoginPage";
 import { Search } from "./Pages/Search";
 import { News } from "./Pages/NewsDetail";
+import { SignUp } from "./Pages/signUp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/author" element={<Author />} />
         <Route path="/login" element={<Login />} />
         <Route path="/news-detail" element={<News />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>

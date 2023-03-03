@@ -171,12 +171,14 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6vh;
 }
 .HomePage2ContentTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 46vw;
 }
 .homePageBtn {
   width: 112px;
@@ -202,8 +204,9 @@
 }
 .HomePage2Card {
   display: flex;
-  width: 296px;
+  width: 295px;
   height: 520px;
+  align-items: center;
   flex-direction: column;
   gap: 2vh;
 }
@@ -213,6 +216,8 @@
   background-color: #919191;
 }
 .HomePage2CardText {
+  width: 270px;
+  text-align: left;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
@@ -235,9 +240,93 @@
 .HomePage2CardDate {
   display: flex;
   flex-direction: row;
+  width: 270px;
   gap: 1vw;
 }
 .HomePage2Card:hover {
-  border: 2px solid #9a9ab0;
-  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.HomePage3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+}
+.HomePage3Card {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+  height: 519px;
+  gap: 1vh;
+}
+.HomePage3CardImg {
+  width: 608px;
+  height: 376px;
+  background-color: #919191;
+}
+.HomePage3CardText {
+  width: 560px;
+  height: 58px;
+  left: 120px;
+  top: 3657px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #333333;
+}
+.HomePage3CardDate {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.HomePage3cardDateName {
+  width: 68px;
+  height: 13px;
+  left: 201px;
+  top: 3739px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0.008em;
+}
+.HomePage3cardDateDate {
+  width: 68px;
+  height: 13px;
+  left: 201px;
+  top: 3739px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 0.008em;
+}
+.HomePage3TopLeft {
+  width: 342px;
+  height: 37px;
+  left: 104px;
+  top: 3164px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #11142d;
+}
+.HomePage3Contents {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+}
+.HomePage3Text {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  overflow-x: scroll;
 }
