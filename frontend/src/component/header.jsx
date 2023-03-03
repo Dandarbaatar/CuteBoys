@@ -2,6 +2,7 @@ import "../App.css";
 import { Button } from "./button";
 import logoWhite from "../assets/logoWhite.svg";
 import searchButton from "../assets/search.svg";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -9,7 +10,9 @@ function Header(props) {
       <div className="headerTop">
         <div className="headerTopLeft">
           <div className="headerTopLeftSon">
-            <Button text="News" />
+            <Link to="/news-detail">
+              <Button text="News" />
+            </Link>
             <Button text="Innovation" />
             <Button text="Science" />
             <Button text="Industry" />
@@ -27,20 +30,26 @@ function Header(props) {
       <div className="headerBottom">
         <div className="headeraBottomLeft">
           <img src={logoWhite} className="logoWhite" alt="" />
-          <Button text="Home" />
+          <Link to="/">
+            <Button text="Home" />
+          </Link>
           <Button text="Feature" />
           <Button text="Shop" />
           <Button text="Gallery" />
           <Button text="Blog" />
           <Button text="About" />
-          <Button text="Contact" />
+          <Link to="/author">
+            <Button text="Contact" />
+          </Link>
         </div>
         <div className="headerBottomRight">
           <div className="headerBottomRightSon">
-            <button className="button">
-              <img src={searchButton} alt="" />
-            </button>
-            <Button class="subButton" text="Subscribe" />
+            <Link to="/search">
+              <button className="button">
+                <img src={searchButton} alt="" />
+              </button>
+            </Link>
+            <Button class="subButton" text="Login/SignUp" />
           </div>
         </div>
       </div>
