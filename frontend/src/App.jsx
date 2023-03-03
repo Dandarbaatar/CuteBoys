@@ -17,6 +17,7 @@ function App() {
         <Route path="/author" element={<Author />} />
         <Route path="/login" element={<Login />} />
         <Route path="/news-detail" element={<News />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
