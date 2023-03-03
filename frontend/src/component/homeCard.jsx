@@ -1,10 +1,6 @@
 import React from "react";
 import "../css/home.css";
-<<<<<<< HEAD
-export const HomeCard = () => {
-=======
 export const HomeCard1 = () => {
->>>>>>> 753d6d5 (Home card zasav)
   return (
     <div className="HomePage2Card">
       <div className="HomePage2CardImg"></div>
@@ -19,8 +15,6 @@ export const HomeCard1 = () => {
     </div>
   );
 };
-<<<<<<< HEAD
-=======
 export const Homecard2 = () => {
   return (
     <div className="HomePage3Card">
@@ -29,4 +23,3 @@ export const Homecard2 = () => {
     </div>
   );
 };
->>>>>>> 753d6d5 (Home card zasav)
