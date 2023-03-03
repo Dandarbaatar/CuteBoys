@@ -53,6 +53,9 @@
 .login_input {
   width: 18vw;
   height: 4vh;
+  background: #ffffff;
+  border: 0.6px solid #282828;
+  border-radius: 6px;
 }
 .login_password {
   width: 18vw;
@@ -60,6 +63,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #ffffff;
+  border: 0.6px solid #282828;
+  border-radius: 6px;
 }
 .login_login {
   width: 18vw;
