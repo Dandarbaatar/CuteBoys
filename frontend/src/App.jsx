@@ -5,6 +5,7 @@ import Footer from "./component/footer";
 import Author from "./Pages/Author";
 import Login from "./Pages/LoginPage";
 import { Search } from "./Pages/Search";
+import { News } from "./Pages/NewsDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/author" element={<Author />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/news-detail" element={<News />} />
       </Routes>
     </BrowserRouter>
   );

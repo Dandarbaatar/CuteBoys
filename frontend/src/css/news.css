@@ -1,0 +1,73 @@
+.newsDad {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("../assets/photo.jpeg"); */
+  background-color: gray;
+}
+
+.news {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 80%;
+}
+
+.heroDiv {
+  display: flex;
+  /* border: 1px solid black; */
+  height: 70%;
+  width: 50%;
+  margin-left: 10%;
+  flex-direction: column;
+  color: white;
+}
+
+.heroInfo {
+  height: 10%;
+  width: 30%;
+  /* border: 1px solid red; */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.005em;
+}
+
+.heroHeader {
+  display: flex;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  letter-spacing: 0.003em;
+  width: 100%;
+  height: 70%;
+}
+
+.heroUser {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 10%;
+  align-items: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+}
+
+.userProfile {
+  height: 5vh;
+  width: 5vw;
+  border-radius: 100%;
+}
+
+.likeCommentShare {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}

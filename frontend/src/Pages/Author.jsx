@@ -310,6 +310,12 @@ function Author() {
               </div>
             </div>
           </div>
+        </div>
+        <div
+          style={{
+            height: "10vh",
+          }}
+        >
           <div
             style={{
               display: "flex",

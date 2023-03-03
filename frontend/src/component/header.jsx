@@ -23,6 +23,7 @@ function Header(props) {
           </div>
         </div>
       </div>
+      <div className="headerLine"></div>
       <div className="headerBottom">
         <div className="headeraBottomLeft">
           <img src={logoWhite} className="logoWhite" alt="" />
@@ -43,6 +44,7 @@ function Header(props) {
           </div>
         </div>
       </div>
+      <div className="headerLine"></div>
     </div>
   );
 }
