@@ -47,6 +47,7 @@ body {
 .headerLine {
   width: 100vw;
   height: 0.5px;
+  opacity: 70%;
   background-color: white;
   border: none;
 }
@@ -127,6 +128,16 @@ body {
   /* border: 1px solid black; */
   background: none;
   color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  border: none;
+}
+.button:hover {
+  height: 30px;
+  width: max-content;
+  background: none;
+  color: rgb(103, 103, 103);
   font-size: 16px;
   font-weight: 700;
   font-family: "Mulish", sans-serif;
