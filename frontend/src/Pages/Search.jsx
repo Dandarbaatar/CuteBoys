@@ -6,11 +6,14 @@ import { useEffect, useState } from "react";
 import { Changepage } from "../component/changepage";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import searchButton from "../assets/search.svg";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
+  const [one, setOne] = useState(true);
   const [news, setNews] = useState([]);
   const [but, setBut] = useState([]);
+  const [color, setColor] = useState(false);
   let a = 0;
   let b = 0;
   let c = [0];
@@ -21,7 +24,6 @@ export const Search = () => {
   const Get = async () => {
     news.forEach((element) => {
       a++;
-      console.log(a);
       if (a >= 3) {
         b++;
         a = 0;
@@ -33,7 +35,6 @@ export const Search = () => {
   useEffect(() => {
     Get();
   }, [news]);
-  useEffect(() => {}, [but]);
   const Input = (e) => {
     setInputs(e.target.value);
   };
@@ -72,15 +73,15 @@ export const Search = () => {
           <Button
             style={{
               backgroundColor: "#F36326",
-              height: "60%",
-              width: "5.5vh",
+              height: "5.5vh",
+              width: "6vh",
               marginLeft: "5vw",
               borderRadius: "8px",
             }}
           >
             <img
-              style={{ width: "60%", height: "60%" }}
-              src="button.png"
+              style={{ width: "80%", height: "80%" }}
+              src={searchButton}
               alt=""
             />
           </Button>
@@ -121,7 +122,15 @@ export const Search = () => {
             />
           </Button>
           {but?.map((el) => {
-            return <Changepage />;
+            return (
+              <Changepage
+                color={color}
+                setColor={setColor}
+                el={el}
+                one={one}
+                setOne={setOne}
+              />
+            );
           })}
           <Button
             style={{
