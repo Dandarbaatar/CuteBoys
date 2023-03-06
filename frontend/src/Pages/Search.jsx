@@ -146,7 +146,14 @@ export const Search = () => {
           </Button>
         </div>
       </div>
-      <Footer />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Footer />
+      </div>
     </div>
   );
 };
