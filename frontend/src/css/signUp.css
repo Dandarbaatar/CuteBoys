@@ -24,21 +24,19 @@
 .signUpSize {
   width: 80vw;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 6vw;
+  justify-content: space-around;
+  align-items: center;
 }
 .signUpImg {
-  width: 827px;
-  height: 650px;
+  width: 40vw;
+  height: 60vh;
   background-image: url(../assets/signUp.svg);
 }
 
 .signUpContent1 {
-  width: 132px;
-  height: 38px;
-  left: 146px;
-  top: 103px;
+  width: 12vw;
+  text-align: center;
+  height: 5vh;
   font-family: "arial";
   font-style: normal;
   font-weight: 300;
@@ -47,14 +45,13 @@
   color: #000000;
 }
 .signUpContent2 {
-  width: 157px;
-  height: 47px;
-  left: 146px;
-  top: 151px;
+  width: 20vw;
+  height: 7vh;
+  text-align: center;
   font-family: "arial";
   font-style: normal;
   font-weight: 500;
-  font-size: 31px;
+  font-size: 33px;
   line-height: 46px;
   color: #000000;
 }
@@ -76,8 +73,8 @@
   color: #000000;
 }
 .signUpContent3Inp {
-  width: 423px;
-  height: 59px;
+  width: 19vw;
+  height: 6vh;
   left: 6.38%;
   right: 67.14%;
   top: 32.2%;
@@ -98,8 +95,8 @@
   justify-content: center;
 }
 .signUpContentBtn {
-  width: 423px;
-  height: 57px;
+  width: 19vw;
+  height: 6vh;
   left: 146px;
   top: 720px;
   color: white;
