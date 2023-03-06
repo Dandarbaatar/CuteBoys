@@ -24,6 +24,8 @@ export const Search = () => {
     { is: "pmet" },
     { is: "asd" },
     { is: "dsa" },
+    { is: "temp" },
+    { is: "pmet" },
   ];
   useEffect(() => {
     setNews(temp);
