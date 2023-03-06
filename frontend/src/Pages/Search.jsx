@@ -4,17 +4,16 @@ import Button from "react-bootstrap/Button";
 import { News } from "../component/news";
 import { useEffect, useState } from "react";
 import { Changepage } from "../component/changepage";
+import { PageChange } from "../component/pagechange";
 import Header from "../component/header";
 import Footer from "../component/footer";
 import searchButton from "../assets/search.svg";
 
 export const Search = () => {
   const [inputs, setInputs] = useState("");
-  const [one, setOne] = useState(true);
   const [news, setNews] = useState([]);
   const [but, setBut] = useState([]);
   const [clicked, setClicked] = useState(1);
-  const [other, setOther] = useState(false);
   let a = 0;
   let b = 0;
   let c = [0];
@@ -25,8 +24,6 @@ export const Search = () => {
     { is: "pmet" },
     { is: "asd" },
     { is: "dsa" },
-    { is: "temp" },
-    { is: "pmet" },
   ];
   useEffect(() => {
     setNews(temp);
@@ -41,6 +38,16 @@ export const Search = () => {
         setBut(c);
       }
     });
+  };
+  const ChangeBack = () => {
+    if (clicked > 1) {
+      setClicked(clicked - 1);
+    }
+  };
+  const ChangeForward = () => {
+    if (clicked < but.length) {
+      setClicked(clicked + 1);
+    }
   };
   useEffect(() => {
     Get();
@@ -118,12 +125,14 @@ export const Search = () => {
             alignItems: "center",
           }}
         >
-          <Button
+          <PageChange />
+          {/* <Button
             style={{
               backgroundColor: "transparent",
               color: "#E0E0E0",
               border: "none",
             }}
+            onClick={ChangeBack}
           >
             <img
               src="Group422.svg"
@@ -133,15 +142,7 @@ export const Search = () => {
           </Button>
           {but?.map((el) => {
             return (
-              <Changepage
-                el={el}
-                one={one}
-                setOne={setOne}
-                clicked={clicked}
-                setClicked={setClicked}
-                other={other}
-                setOther={setOther}
-              />
+              <Changepage el={el} clicked={clicked} setClicked={setClicked} />
             );
           })}
           <Button
@@ -149,13 +150,14 @@ export const Search = () => {
               backgroundColor: "transparent",
               border: "none",
             }}
+            onClick={ChangeForward}
           >
             <img
               src="Group422.svg"
               style={{ width: "2.5vw", height: "2.5vw", marginLeft: "-0.5vw" }}
               alt=""
             />
-          </Button>
+          </Button> */}
         </div>
       </div>
       <div

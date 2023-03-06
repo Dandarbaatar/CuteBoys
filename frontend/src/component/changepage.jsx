@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 
-export const Changepage = ({
-  el,
-  one,
-  setOne,
-  clicked,
-  setClicked,
-  other,
-  setOther,
-}) => {
+export const Changepage = ({ el, clicked, setClicked }) => {
   const [imp, setImp] = useState(false);
   const [color, setColor] = useState(false);
   const number = el + 1;
