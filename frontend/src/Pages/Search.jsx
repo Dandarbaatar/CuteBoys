@@ -13,11 +13,21 @@ export const Search = () => {
   const [one, setOne] = useState(true);
   const [news, setNews] = useState([]);
   const [but, setBut] = useState([]);
-  const [color, setColor] = useState(false);
+  const [clicked, setClicked] = useState(1);
+  const [other, setOther] = useState(false);
   let a = 0;
   let b = 0;
   let c = [0];
-  let temp = [{ is: "asd" }, { is: "dsa" }, { is: "temp" }, { is: "pmet" }];
+  let temp = [
+    { is: "asd" },
+    { is: "dsa" },
+    { is: "temp" },
+    { is: "pmet" },
+    { is: "asd" },
+    { is: "dsa" },
+    { is: "temp" },
+    { is: "pmet" },
+  ];
   useEffect(() => {
     setNews(temp);
   }, []);
@@ -124,11 +134,13 @@ export const Search = () => {
           {but?.map((el) => {
             return (
               <Changepage
-                color={color}
-                setColor={setColor}
                 el={el}
                 one={one}
                 setOne={setOne}
+                clicked={clicked}
+                setClicked={setClicked}
+                other={other}
+                setOther={setOther}
               />
             );
           })}
