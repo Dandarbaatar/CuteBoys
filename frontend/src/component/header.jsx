@@ -35,7 +35,9 @@ function Header(props) {
           </Link>
           <Button text="Feature" />
           <Button text="Shop" />
-          <Button text="Gallery" />
+          <Link to="/signup">
+            <Button text="Gallery" />
+          </Link>
           <Button text="Blog" />
           <Button text="About" />
           <Link to="/author">
@@ -49,7 +51,9 @@ function Header(props) {
                 <img src={searchButton} alt="" />
               </button>
             </Link>
-            <Button class="subButton" text="Login/SignUp" />
+            <Link to="/login">
+              <Button class="subButton" text="Login/SignUp" />
+            </Link>
           </div>
         </div>
       </div>
