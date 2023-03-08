@@ -1,29 +1,22 @@
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 
-export const Changepage = ({ color, setColor, el, one, setOne }) => {
+export const Changepage = ({ el, clicked, setClicked }) => {
   const [imp, setImp] = useState(false);
+  const [color, setColor] = useState(false);
   const number = el + 1;
   useEffect(() => {
-    if (number === 1) {
+    if (clicked === number) {
       setImp(true);
-      setColor(false);
-      setOne(true);
-    }
-  }, [number]);
-  const Change = () => {
-    if (number === 1) {
-      setOne(true);
-    }
-    if (imp) {
-      setOne(false);
-      setImp(false);
       setColor(true);
-    }
-    if (color) {
-      setOne(false);
-      setImp(true);
+    } else {
       setColor(false);
+    }
+  }, [clicked]);
+  const Change = () => {
+    setClicked(el + 1);
+    if (imp) {
+      setColor(true);
     }
   };
   return (
@@ -38,13 +31,13 @@ export const Changepage = ({ color, setColor, el, one, setOne }) => {
           justifyContent: "center",
           marginRight: "0.5vw",
           fontSize: "0.85vw",
-          color: imp ? "white" : "black",
+          color: color ? "white" : "black",
           height: "2vw",
           width: "2vw",
-          backgroundColor: imp ? "#109BE9" : "transparent",
+          backgroundColor: color ? "#109BE9" : "transparent",
         }}
       >
-        {number}
+        {el + 1}
       </Button>
     </div>
   );
