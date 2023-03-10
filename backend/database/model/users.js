@@ -14,8 +14,8 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minlength: [8, "Password must be at least 8 characters"],
-    maxlength: [12, "Password must be contains from 8 to 12 characters"],
+    minlength: [60, "Password must be at least 8 characters"],
+    maxlength: [100, "Password must be contains from 8 to 12 characters"],
   },
   email: {
     type: String,
@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema({
     ],
   },
   createdAt: { type: Date, default: Date.now() },
-  userImg: { type: String, required: true },
+  userImg: { type: String },
   admin: {
     type: Boolean,
     default: false,
