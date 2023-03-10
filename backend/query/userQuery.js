@@ -1,5 +1,6 @@
 const UserSchema = require("../database/model/users");
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 
 exports.getUserDataById = async (req) => {
   const { id } = req.params;
@@ -14,11 +15,15 @@ exports.getUserData = async (req) => {
 };
 
 exports.createUserQuery = async (req) => {
-  const { username, password, email } = req.body;
+  const { password, email, username } = req.body;
+
+  const salt = bcrypt.genSaltSync(1);
+  const hash = bcrypt.hashSync(password, salt);
+
   const result = await new UserSchema({
-    username: username,
-    password: password,
+    password: hash,
     email: email,
+    username: username,
   }).save();
   return result;
 };
