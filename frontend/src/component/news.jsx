@@ -1,4 +1,4 @@
-export const News = () => {
+export const News = ({ is }) => {
   return (
     <div
       style={{
@@ -25,7 +25,7 @@ export const News = () => {
       >
         <div style={{ fontWeight: "700", fontSize: "1.6vw" }}>
           Charge Two Devices at the Same Time With This Magnetic Wireless
-          Charging Dock
+          Charging Dock {is}
         </div>
         <div
           style={{

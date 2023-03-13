@@ -3,7 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { News } from "../component/news";
 import { useEffect, useState } from "react";
-import { Changepage } from "../component/changepage";
 import { PageChange } from "../component/pagechange";
 import Header from "../component/header";
 import Footer from "../component/footer";
@@ -12,9 +11,8 @@ import searchButton from "../assets/search.svg";
 export const Search = () => {
   const [inputs, setInputs] = useState("");
   const [news, setNews] = useState([]);
-  let a = 0;
-  let b = 0;
-  let c = [0];
+  const [show, setShow] = useState([]);
+  const [check, setCheck] = useState(false);
   let temp = [
     { is: "asd" },
     { is: "dsa" },
@@ -30,6 +28,15 @@ export const Search = () => {
   }, []);
   const Input = (e) => {
     setInputs(e.target.value);
+    temp.map((el) => {
+      if (inputs == el.is.charAt(0)) {
+        setShow(el);
+      }
+    });
+    console.log(show);
+  };
+  const Searching = () => {
+    setCheck(true);
   };
   return (
     <div>
@@ -71,6 +78,7 @@ export const Search = () => {
               marginLeft: "5vw",
               borderRadius: "8px",
             }}
+            onClick={Searching}
           >
             <img
               style={{ width: "80%", height: "80%" }}
@@ -91,9 +99,13 @@ export const Search = () => {
         <div style={{ fontWeight: "700", fontSize: "2vw", marginBottom: "1%" }}>
           News
         </div>
-        {news?.map((el) => {
-          return <News />;
-        })}
+        {check
+          ? news?.map((el) => {
+              return <News is={el.is} />;
+            })
+          : show.map((el) => {
+              return <News is={el.is} />;
+            })}
         <div
           style={{
             display: "flex",
@@ -102,38 +114,6 @@ export const Search = () => {
           }}
         >
           <PageChange />
-          {/* <Button
-            style={{
-              backgroundColor: "transparent",
-              color: "#E0E0E0",
-              border: "none",
-            }}
-            onClick={ChangeBack}
-          >
-            <img
-              src="Group422.svg"
-              alt=""
-              style={{ rotate: "180deg", width: "2.5vw", height: "2.5vw" }}
-            />
-          </Button>
-          {but?.map((el) => {
-            return (
-              <Changepage el={el} clicked={clicked} setClicked={setClicked} />
-            );
-          })}
-          <Button
-            style={{
-              backgroundColor: "transparent",
-              border: "none",
-            }}
-            onClick={ChangeForward}
-          >
-            <img
-              src="Group422.svg"
-              style={{ width: "2.5vw", height: "2.5vw", marginLeft: "-0.5vw" }}
-              alt=""
-            />
-          </Button> */}
         </div>
       </div>
       <div
