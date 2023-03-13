@@ -5,13 +5,13 @@ const {
   usersGetController,
   userUpdateController,
   useDeleteController,
-  userLogin,
+  userlogin,
 } = require("../controller/userController");
 
 const UserRouter = express
   .Router()
   .post("/user", userPostController)
-  .post("/login", userLogin)
+  .post("/login", userlogin)
   .get("/user/:id", userGetControllerById)
   .get("/users", usersGetController)
   .patch("/user/:id", userUpdateController)
