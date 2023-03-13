@@ -7,6 +7,9 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 import "bootstrap/dist/css/bootstrap.css";
 import Button from "react-bootstrap/Button";
+import { Arrow } from "../assets/Group422";
+import { Arrow2 } from "../assets/Group4222";
+import { PageChange } from "../component/pagechange";
 
 function Author() {
   const [user1, setUser1] = useState("");
@@ -49,7 +52,8 @@ function Author() {
                 alignItems: "center",
               }}
             >
-              <Button
+              <PageChange />
+              {/* <Button
                 style={{
                   backgroundColor: "transparent",
                   color: "#E0E0E0",
@@ -57,7 +61,7 @@ function Author() {
                 }}
               >
                 <img
-                  src="Group422.svg"
+                  src={<Arrow />}
                   alt=""
                   style={{ rotate: "180deg", width: "2.5vw", height: "2.5vw" }}
                 />
@@ -70,7 +74,7 @@ function Author() {
                 }}
               >
                 <img
-                  src="Group422.svg"
+                  src={<Arrow2 />}
                   style={{
                     width: "2.5vw",
                     height: "2.5vw",
@@ -78,7 +82,7 @@ function Author() {
                   }}
                   alt=""
                 />
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -326,7 +330,8 @@ function Author() {
               alignItems: "center",
             }}
           >
-            <Button
+            <PageChange />
+            {/* <Button
               style={{
                 backgroundColor: "transparent",
                 color: "#E0E0E0",
@@ -355,7 +360,7 @@ function Author() {
                 }}
                 alt=""
               />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
