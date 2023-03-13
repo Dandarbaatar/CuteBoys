@@ -177,8 +177,8 @@
 .HomePage2ContentTop {
   display: flex;
   flex-direction: row;
+  width: 80vw;
   justify-content: space-between;
-  gap: 46vw;
 }
 .homePageBtn {
   width: 112px;

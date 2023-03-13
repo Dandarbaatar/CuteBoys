@@ -1,10 +1,10 @@
-const PostSchema = require("../database/model/posts");
+const Post = require("../database/model/posts");
 const mongoose = require("mongoose");
 
 exports.createPost = async (req) => {
   const { description, image } = req.body;
   const { id } = req.params;
-  const result = await new PostSchema({
+  const result = await new Post({
     description: description,
     image: image,
     userID: id,
