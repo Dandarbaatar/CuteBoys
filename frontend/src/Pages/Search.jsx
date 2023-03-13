@@ -12,8 +12,6 @@ import searchButton from "../assets/search.svg";
 export const Search = () => {
   const [inputs, setInputs] = useState("");
   const [news, setNews] = useState([]);
-  const [but, setBut] = useState([]);
-  const [clicked, setClicked] = useState(1);
   let a = 0;
   let b = 0;
   let c = [0];
@@ -30,30 +28,6 @@ export const Search = () => {
   useEffect(() => {
     setNews(temp);
   }, []);
-  const Get = async () => {
-    news.forEach((element) => {
-      a++;
-      if (a >= 3) {
-        b++;
-        a = 0;
-        c.push(b);
-        setBut(c);
-      }
-    });
-  };
-  const ChangeBack = () => {
-    if (clicked > 1) {
-      setClicked(clicked - 1);
-    }
-  };
-  const ChangeForward = () => {
-    if (clicked < but.length) {
-      setClicked(clicked + 1);
-    }
-  };
-  useEffect(() => {
-    Get();
-  }, [news]);
   const Input = (e) => {
     setInputs(e.target.value);
   };
