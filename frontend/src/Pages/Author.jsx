@@ -2,14 +2,14 @@ import Photo from "../assets/photo.jpeg";
 import "../css/author.css";
 // import React, { useState, useEffect } from "react";
 // import axios from "axios";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../component/header";
 import Footer from "../component/footer";
 import "bootstrap/dist/css/bootstrap.css";
 import Button from "react-bootstrap/Button";
 
 function Author() {
-  // const [data, setdata] = useState([]);
+  const [user1, setUser1] = useState("");
 
   // const fetchURL = async () => {
   //   await axios
@@ -22,6 +22,9 @@ function Author() {
   // useEffect(() => {
   //   fetchURL();
   // });
+  useEffect(() => {
+    setUser1(localStorage.getItem("username"));
+  }, []);
 
   return (
     <div className="suh_container">
@@ -30,7 +33,7 @@ function Author() {
         {/* ehnii heseg */}
         <div className="suh_header">
           <img src={Photo} alt="" className="suh_prof" />
-          <div className="suh_name">Guy Hawkins</div>
+          <div className="suh_name">{user1}</div>
           <div className="suh_font">
             Daily international newspaper based in london
           </div>

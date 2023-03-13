@@ -1,43 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/login.css";
 import pic from "../assets/small-team-discussing-ideas-2194220-0.png";
-// import axios from "axios";
+import axios from "axios";
 
 function LoginPage() {
-  // const [pass, setPass] = useState("");
-  // const [email2, setEmail2] = useState("");
-  // const [username1, setUsername1] = useState("");
-  // const loginUser = async () => {
-  //   try {
-  //     const res = await axios({
-  //       url: "http://localhost:8000/login",
-  //       method: "POST",
-  //       data: {
-  //         password: pass,
-  //         username1: username1,
-  //       },
-  //       headers: {
-  //         // authorization: `bearer ${token}`,
-  //       },
-  //     });
-  //     console.log(res);
+  const [pass, setPass] = useState("");
+  const [username1, setUsername1] = useState("");
+  const loginUser = async () => {
+    try {
+      const res = await axios({
+        url: "http://localhost:8000/login",
+        method: "POST",
+        data: {
+          password: pass,
+          username: username1,
+        },
+        headers: {
+          // authorization: `bearer ${res?.data?.token}`,
+        },
+      });
+      console.log(res);
 
-  //     if (res?.status === 200) {
-  //       console.log(res);
-  //       const token = res?.data?.token;
-  //       const id = res?.data?.id;
-  //       localStorage.setItem("token", token);
-  //       localStorage.setItem("username", email2);
-  //       localStorage.setItem("id", id);
-  //       window.location = "profile";
-  //     }
-  //     //  else if (err.status === 500) {
-  //     //   alert("Incorrect or password");
-  //     // }
-  //   } catch (err) {
-  //     alert(err.message);
-  //   }
-  // };
+      if (res?.status === 200) {
+        console.log(res);
+        const token = res?.data?.token;
+        const id = res?.data?.id;
+        localStorage.setItem("token", token);
+        localStorage.setItem("username", username1);
+        localStorage.setItem("id", id);
+        window.location = "author";
+      }
+      //  else if (err.status === 500) {
+      //   alert("Incorrect or password");
+      // }
+    } catch (err) {
+      alert(err.message);
+    }
+  };
   return (
     <div className="login_container">
       <div className="login_body">
@@ -55,6 +54,7 @@ function LoginPage() {
                 type="text"
                 placeholder="Enter your user name"
                 className="login_input"
+                onChange={(e) => setUsername1(e.target.value)}
               />
             </div>
             <div className="login_h">
@@ -64,6 +64,7 @@ function LoginPage() {
                   className="login_password"
                   type="text"
                   placeholder="●●●●●●"
+                  onChange={(e) => setPass(e.target.value)}
                 />
               </div>
               <div className="login_jus">
@@ -84,7 +85,9 @@ function LoginPage() {
           </div>
 
           <div>
-            <button className="login_login">Login</button>
+            <button className="login_login" onClick={loginUser}>
+              Login
+            </button>
           </div>
           <div className="log_last">
             Don’t have an Account ?
